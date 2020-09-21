@@ -5,6 +5,6 @@
     @include('partials.content-single-'.get_post_type())
   @endwhile
   <div class="alert alert-warning">
-      {{ __('Sorry, no results were found 111.', 'sage') }}
+      {{ __('Sorry, no results were found.', 'sage') }}
     </div>
 @endsection
