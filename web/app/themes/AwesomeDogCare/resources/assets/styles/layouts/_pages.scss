@@ -4,8 +4,9 @@
 
   h1 {
     font-family: "Roboto Slab", serif;
-    font-weight: 3rem;
-    padding-top: 200px !important;
+    font-weight: bold;
+    font-size: 3.1rem;
+    padding-top: 13.4rem !important;
   }
 }
 
@@ -14,8 +15,14 @@
 }
 
 .intro {
-  padding-top: 100px !important;
-  padding-bottom: 100px;
+  padding-top: 6.25rem !important;
+  padding-bottom: 6.25rem;
+
+  h2 {
+    text-transform: uppercase;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+  }
 }
 
 .img-detail {
@@ -23,6 +30,8 @@
 
   h2 {
     text-transform: uppercase;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
   }
 
   p {
@@ -37,7 +46,14 @@
 }
 
 .blog-section {
-  margin-top: 25px;
+  margin-top: 5.25rem;
+  margin-bottom: 5.25rem;
+
+  h2 {
+    text-transform: uppercase !important;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .flex-wrap {
@@ -47,4 +63,33 @@
     width: 50%;
     padding-top: 2.5rem;
   }
+}
+
+.nav li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.card-body {
+  padding: 0 !important;
+
+  h4 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    padding-bottom: 2.5rem;
+    padding-top: 2.6rem;
+  }
+}
+
+.card {
+  border: none;
+}
+
+.book-sec1 {
+  padding: 2.5rem 4rem !important;
 }

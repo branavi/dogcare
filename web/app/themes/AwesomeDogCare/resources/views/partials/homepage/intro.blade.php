@@ -50,7 +50,7 @@
                     <div class="col-md-6 text-center img-detail">
                         <h2>{!! $imgtitle !!}</h2>
                         <p> {!! $description !!}</p>
-                        <a href="{!! $button_link !!}">READ MORE</a>
+                        <a href="{!! $button_link !!}" class="btn-primary" >Read more</a>
                     </div>
                 </div>
                 @php $num_rows++; @endphp

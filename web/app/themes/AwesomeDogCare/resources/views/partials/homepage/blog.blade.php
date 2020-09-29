@@ -4,8 +4,8 @@
    $choose_posts = get_sub_field('choose_posts'); 
 @endphp
 @if( $choose_posts ):
-        <div class="container pt-4 pb-4 blog-section" >
-            <h2 class="pt-4 pb-4 text-center">Blog Section Title</h2>
+        <div class="container blog-section" >
+            <h2 class="text-center">Blog Section Title</h2>
             <div class="row">
             
                 @foreach( $choose_posts as $post )
@@ -17,15 +17,15 @@
                 $exce = get_the_excerpt($post->ID);
                 setup_postdata($post);
                 @endphp
-                <div class="col-md-3 ">
+                <div class="col-md-4">
                     <div class="card">
-                    <img src="{!! $iamge !!}" alt="" class="w-100">
-                    
-                    <h4><a href="{!! $permalink !!}">{!! $title !!}</a></h4>
-                    <div class="short-desc">
-                        {!! $exce !!}
-                    </div>
-                    <a href="{!! $permalink !!}">Read More</a>
+                      <img src="{!! $iamge !!}" alt="" class="w-100">
+                      <div class="card-body">
+                            <h4 class="blog-detail">{!! $title !!}</h4>
+                            <p>{!! $exce !!}</p>
+
+                            <a href="{!! $permalink !!}" class="btn btn-primary">Read More</a>
+                            </div>
                     </div>
                 </div>
                 @endforeach
